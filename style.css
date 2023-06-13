@@ -362,6 +362,15 @@ section {
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
+  margin: 0 auto; /* Center the slider horizontally */
+}
+
+@media (max-width: 767px) {
+  .slider {
+    width: 100%; /* Make the slider full width on mobile devices */
+    height: auto; /* Adjust the height to fit the content */
+    max-width: 800px; /* Limit the maximum width for larger screens */
+  }
 }
 
 .slides {
