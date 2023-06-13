@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>InsyT</title>
+</head>
+<body>
+    
+    <header>
+        <h1>InsyT</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="slider">
+      <!-- IMAGE SLIDER START -->
+      <div class="slider">
+        <div class="slides">
+          <!-- RADIO BUTTONS START -->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!-- RADIO BUTTONS END -->
+          <!-- SLIDE IMAGES START -->
+          <div class="slide first">
+            <img src="img/brim ad.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="img/pexels-wendy-wei-1190297.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="img/a-reece ad.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="img/pexels-sebastian-ervi-1763075.jpg" alt="">
+          </div>
+          <!-- SLIDE IMAGES END -->
+          <!-- AUTOMATIC NAVIGATION START -->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!-- AUTOMATIC NAVIGATION END -->
+        </div>
+        <!-- MANUAL NAVIGATION START -->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!-- MANUAL NAVIGATION END -->
+      </div>
+      <!-- IMAGE SLIDER END -->
+
+      <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+          document.getElementById("radio" + counter).checked = true;
+          counter++;
+          if(counter > 4){
+            counter = 1;
+          }
+        }, 3500);
+      </script>
+    </section>
+
+    <section class="heading">
+      <h2>Categories</h2>
+      </div>
+    </section>
+    
+    <section class="tm-container">
+      <div class="tm-row">
+        <nav class="tm-site-nav">
+          <ul class="tm-site-nav-ul">
+            <li class="tm-page-nav-item">
+              <a href="sports.html" class="tm-page-link">
+                <i class="fas fa-mug-hot tm-page-link-icon"></i>
+                <span>Sports</span>
+              </a>
+            </li>
+            <li class="tm-page-nav-item">
+              <a href="music.html" class="tm-page-link">
+                <i class="fas fa-users tm-page-link-icon"></i>
+                <span>Music</span>
+              </a>
+            </li>
+            <li class="tm-page-nav-item">
+              <a href="theater.html" class="tm-page-link">
+                <i class="fas fa-glass-martini tm-page-link-icon"></i>
+                <span>Theater</span>
+              </a>
+            </li>
+            <li class="tm-page-nav-item">
+              <a href="party.html" class="tm-page-link">
+                <i class="fas fa-comments tm-page-link-icon"></i>
+                <span>Party</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>        
+    </div>
+      </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 InsyT Corp. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
