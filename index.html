@@ -1,107 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>InsyT</title>
+	<title>Launching Soon</title>
+	<link rel="stylesheet" type="text/css" href="coming-soon.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <section class="background-section">
-    <header>
-        <h1>InsyT</h1>
-      </header>
-    
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    
-      <section class="heading">
-        <h2>Welcome to InsyT</h2>
-        </div>
-      </section>
-        <!-- Your section content goes here -->
-
-        
-        <section class="slider">
-          <!-- IMAGE SLIDER START -->
-          <div class="slider">
-            <div class="slides">
-              <!-- RADIO BUTTONS START -->
-              <input type="radio" name="radio-btn" id="radio1">
-              <input type="radio" name="radio-btn" id="radio2">
-              <input type="radio" name="radio-btn" id="radio3">
-              <input type="radio" name="radio-btn" id="radio4">
-              <!-- RADIO BUTTONS END -->
-              <!-- SLIDE IMAGES START -->
-              <div class="slide first">
-                <img src="img/kenji ad.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img src="img/pexels-wendy-wei-1190297.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img src="img/mlamli ad.jpg" alt="">
-              </div>
-              <div class="slide">
-                <img src="img/photo-1507525428034-b723cf961d3e.jpg" alt="">
-              </div>
-              <!-- SLIDE IMAGES END -->
-              <!-- AUTOMATIC NAVIGATION START -->
-              <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-              </div>
-              <!-- AUTOMATIC NAVIGATION END -->
-            </div>
-            <!-- MANUAL NAVIGATION START -->
-            <div class="navigation-manual">
-              <label for="radio1" class="manual-btn"></label>
-              <label for="radio2" class="manual-btn"></label>
-              <label for="radio3" class="manual-btn"></label>
-              <label for="radio4" class="manual-btn"></label>
-            </div>
-            <!-- MANUAL NAVIGATION END -->
-          </div>
-          <!-- IMAGE SLIDER END -->
-
-          <script type="text/javascript">
-            var counter = 1;
-            setInterval(function(){
-              document.getElementById("radio" + counter).checked = true;
-              counter++;
-              if(counter > 4){
-                counter = 1;
-              }
-            }, 3000);
-          </script>
-
-        </section>
-
-
-      <section class="hero">
-        
-        <p>Guaranteed to give you best events happening in your city</p>
-        <button> <a class="qosh" href="events.html">
-            Shop Now!
-          </a></button>
-       </section>
-
-      <footer>
-        <p class="footer">&copy; 2023 InsyT Corp. All rights reserved.</p>
-      </footer>
-    
-      <script src="script.js"></script>
-    </section>
-    
+	<div class="container">
+		<h1 class="title">
+            <span>InsyT</span>
+            <br>
+            is coming back soon with
+            <br>
+            <span>InCast</span>
+          </h1>
+		<div class="countdown-container">
+			<div class="countdown-item">
+				<span id="days"></span>
+				<p>Days</p>
+			</div>
+			<div class="countdown-item">
+				<span id="hours"></span>
+				<p>Hours</p>
+		 </div>
+		 <div class="countdown-item">
+			 <span id="minutes"></span>
+			 <p>Minutes</p>
+		 </div>
+		 <div class="countdown-item">
+			 <span id="seconds"></span>
+			 <p>Seconds</p>
+		 </div>
+		</div>
+		<p>We're currently working hard to maintain our website and prepare for launch. Stay tuned!</p>
+	</div>
+	<script src="https://momentjs.com/downloads/moment.min.js"></script>
+	<script src="soon.js"></script>
 </body>
-
 </html>
